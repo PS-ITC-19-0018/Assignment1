@@ -39,9 +39,9 @@ int main()
     cout<<"THERE ARE THREE ITEMS IN STOCK AS DESCRIBED BELOW. " <<endl;
     cout<<"ITEMS\t\tPRICE" <<endl;
     cout<<"___________________________"<<endl;
-    cout<<"PRINTER\t\t"<<PRINTER_PRICE<<endl;
-    cout<<"PHONE\t\t"<<PHONE_PRICE<<endl;
-    cout<<"TABLE\t\t"<<TABLE_PRICE<<endl;
+    cout<<"PRINTER\t\tGHS"<<PRINTER_PRICE<<endl;
+    cout<<"PHONE\t\tGHS"<<PHONE_PRICE<<endl;
+    cout<<"TABLE\t\tGHS"<<TABLE_PRICE<<endl;
     cout<<endl;
     cout<<"ENTER THE NUMBER ATTACHED TO IT TO INDICATE THE ITEM YOU ARE BUYING"<<endl;
     cout<<"1.PRINTER.\n2.PHONE.\n3.TABLE"<<endl;
@@ -66,7 +66,7 @@ int main()
         price=PRINTER_PRICE*quantity;
         vat=price*vat;
         totalCost=(PRINTER_PRICE*quantity+vat);
-        cout<<"Total Cost : "<<totalCost<<endl;
+        cout<<"Total Cost : GHS "<<totalCost<<endl;
         cout<<"Enter the amount in hand "<<endl;
         cin>>amountPaid;
 
@@ -91,12 +91,12 @@ int main()
         cout<<"Item bought : "<<itemName<<endl;
         cout<<"Quantity : " <<quantity<<endl;
         cout<<"Vat on Items : "<< vat<<endl;
-        cout<<"Total Cost : "<<totalCost<<endl;
-        cout<<"Total amount Paid : "<<amountPaid<<endl;
+        cout<<"Total Cost : GHS "<<totalCost<<endl;
+        cout<<"Total amount Paid : GHS "<<amountPaid<<endl;
 
          if(amountPaid>totalCost)
            {
-            cout<<"Balance : " <<balance<<endl;
+            cout<<"Balance : GHS " <<balance<<endl;
            }
 
          }
@@ -113,7 +113,7 @@ int main()
         price=PHONE_PRICE*quantity;
         vat=price*vat;
         totalCost=(PHONE_PRICE*quantity+vat);
-        cout<<"Total Cost : "<<totalCost<<endl;
+        cout<<"Total Cost : GHS"<<totalCost<<endl;
         cout<<"Enter the amount in hand "<<endl;
         cin>>amountPaid;
 
@@ -122,7 +122,7 @@ int main()
 
         while(amountPaid<totalCost)
         {
-            cout<<"Your money is insufficient!. Please Your money should be greater than or equal to : "<<totalCost<<endl;
+            cout<<"Your money is insufficient!. Please Your money should be greater than or equal to : GHS "<<totalCost<<endl;
             cout<<"Enter your money again :"<<endl;
             cin>>amountPaid;
         }
@@ -136,13 +136,13 @@ int main()
         cout<<"Customer ID : "<<customerID<<endl;
         cout<<"Item bought : "<<itemName<<endl;
         cout<<"Quantity : " <<quantity<<endl;
-        cout<<"Vat on Items : "<< vat<<endl;
-        cout<<"Total Cost : "<<totalCost<<endl;
-        cout<<"Total amount Paid : "<<amountPaid<<endl;
+        cout<<"Vat on Items : GHS"<< vat<<endl;
+        cout<<"Total Cost : GHS"<<totalCost<<endl;
+        cout<<"Total amount Paid : GHS"<<amountPaid<<endl;
 
           if(amountPaid>totalCost)
            {
-            cout<<"Balance : " <<balance<<endl;
+            cout<<"Balance : GHS" <<balance<<endl;
            }
 
         cout<<"=====================" <<endl;
@@ -157,7 +157,7 @@ int main()
         price=TABLE_PRICE*quantity;
         vat=price*vat;
         totalCost=(TABLE_PRICE*quantity+vat);
-        cout<<"Total Cost : "<<totalCost<<endl;
+        cout<<"Total Cost : GHS"<<totalCost<<endl;
         cout<<"Enter the amount in hand "<<endl;
         cin>>amountPaid;
 
@@ -182,13 +182,13 @@ int main()
         cout<<"Customer ID : "<<customerID<<endl;
         cout<<"Item bought : "<<itemName<<endl;
         cout<<"Quantity : " <<quantity<<endl;
-        cout<<"Vat on Items : "<< vat<<endl;
-        cout<<"Total Cost : "<<totalCost<<endl;
-        cout<<"Total amount Paid : "<<amountPaid<<endl;
+        cout<<"Vat on Items : GHS"<< vat<<endl;
+        cout<<"Total Cost : GHS"<<totalCost<<endl;
+        cout<<"Total amount Paid : GHS "<<amountPaid<<endl;
 
           if(amountPaid>totalCost)
            {
-            cout<<"Balance : " <<balance<<endl;
+            cout<<"Balance : GHS " <<balance<<endl;
            }
 
         cout<<"=====================" <<endl;
