@@ -90,7 +90,7 @@ int main()
         cout<<"Customer ID : "<<customerID<<endl;
         cout<<"Item bought : "<<itemName<<endl;
         cout<<"Quantity : " <<quantity<<endl;
-        cout<<"Vat on Items : "<< vat<<endl;
+        cout<<"Vat on Items : GHS "<< vat<<endl;
         cout<<"Total Cost : GHS "<<totalCost<<endl;
         cout<<"Total amount Paid : GHS "<<amountPaid<<endl;
 
